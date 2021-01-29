@@ -13,7 +13,7 @@ Installation:
 
 1. Upload the Map to the root of server.
 2. Log on to your site and go to: Admin Panel->System Admin->Infusions.
-3. Infuse the smtp2go_ap infusion.
+3. Infuse the smtp2go_api infusion.
 4. Check the setting in the control panel of the infusion.
 
 Be aware that the existing file sendmail_include.php is overwritten, so in the case of updating your PHP-Fusion installation, replace this file with the one from this repo.
