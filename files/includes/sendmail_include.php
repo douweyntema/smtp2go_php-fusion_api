@@ -79,7 +79,7 @@ function sendemail($toname, $toemail, $fromname, $fromemail, $subject, $message,
         // actual sending
         $result = $smptp2gomailer->send();
         $resultjson = json_decode($result, true);
-        if (isset($resultjson['failed']) && ($resultjson['failed'] == 0)) {
+        if (isset($resultjson['data']['failed']) && ($resultjson['data']['failed'] == 0)) {
             return true;        // No errors
         } else {
             return false;       // One or more errors
